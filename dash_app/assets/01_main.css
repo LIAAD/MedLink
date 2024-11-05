@@ -1,0 +1,45 @@
+
+.logo {
+    max-height: 100px;  /* Set the maximum height */
+    width: auto;        /* Keep width auto to maintain aspect ratio */
+}
+
+
+.title {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+
+}
+
+.title .beg{
+    text-decoration: underline;
+}
+
+.title .ed{
+   text-decoration: overline ;
+}
+
+
+.catchphrase{
+     font-family: "Raleway", sans-serif;
+
+     font-size: 30px;
+     font-weight: 500;
+     font-style: italic ;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;/* Adjust font size */
+}
+results-card-body {
+    font-size: 18px;
+}
+results-card-header {
+    font-size: 20px;
+}
