@@ -20,22 +20,28 @@ In healthcare, physician-patient interactions are often documented as free-text 
 
 MedLink’s effectiveness was evaluated by a physician, achieving a ranking model performance of NDCG@10 of 0.747.
 
-## ⚙️ Features
+## ⭐ Features 
 
 - **Medical Report Search**: Input a medical report to retrieve similar published case reports.
 - **Ranking and Scoring**: Case reports are ranked based on relevance using a cross-encoder model.
 - **Clinical Entity Visualization**: Key entities (e.g., symptoms, diagnoses) highlighted using Named Entity Recognition (NER).
 - **Textual Explanations**: Provides context and explanations to facilitate comparison of case reports.
 
-## Methodology
+## ⚙️ Methodology
 
 
 
 ![image](https://github.com/LIAAD/MedLink/blob/main/MedLink-architecture.png)
 
-1. The retrieval bi-encoder encodes the set of \(n\) case reports \( A = \{a_1, a_2, \ldots, a_n\} \) and the medical report (\( mr \)) independently.
-3. We calculate the cosine similarity between the \(mr\) embeddings and each pre-computed case report embeddings to get the similarity scores. The top-10 most similar retrieved candidates are then passed to the cross-encoder model for re-ranking.
-5.  The re-ranking cross-encoder takes both the medical report \( mr \) and each retrieved case report as input to compute their ranking score. The ranked case reports are then sorted by ranking scores, producing an ordered list based on their predicted relevance.
+1. **Bi-Encoder Retrieval**: The retrieval process begins with the bi-encoder model, which independently encodes a set of \(n\) case reports \( A = \{a_1, a_2, \ldots, a_n\} \) and the input medical report (\( mr \)).
+   
+2. **Similarity Calculation**: The cosine similarity between the embeddings of the medical report (\(mr\)) and each pre-computed case report embedding is then calculated. This gives a similarity score for each case report in the set.
+
+3. **Top-10 Retrieval**: Based on the similarity scores, the top-10 most similar case reports are retrieved. These candidates are then passed to the next step for re-ranking.
+
+4. **Re-Ranking with Cross-Encoder**: The cross-encoder model takes the medical report \(mr\) and each of the top-10 retrieved case reports as input. It computes a ranking score for each pair, which reflects the relevance of the case report in relation to the medical report.
+
+5. **Final Ranking**: The retrieved case reports are sorted based on the ranking scores produced by the cross-encoder, resulting in an ordered list of case reports, ranked by their predicted relevance to the input medical report.
 
 ## 🛠️ Installation
 
