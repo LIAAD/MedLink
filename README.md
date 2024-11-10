@@ -31,7 +31,7 @@ MedLink’s effectiveness was evaluated by a physician, achieving a ranking mode
 
 
 
-[image](https://github.com/MedLink-architecture.png)](https://github.com/LIAAD/MedLink/blob/main/MedLink-architecture.png)
+![image](https://github.com/LIAAD/MedLink/blob/main/MedLink-architecture.png)
 
 1. The retrieval bi-encoder encodes the set of \(n\) case reports \( A = \{a_1, a_2, \ldots, a_n\} \) and the medical report (\( mr \)) independently.
 3. We calculate the cosine similarity between the \(mr\) embeddings and each pre-computed case report embeddings to get the similarity scores. The top-10 most similar retrieved candidates are then passed to the cross-encoder model for re-ranking.
