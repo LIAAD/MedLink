@@ -101,7 +101,7 @@ MedLink repository is divided into 3 different folders, each containing the esse
 - **`dash_app/`**: Contains the MedLink application and necessary files to run it.
   - **`pages/`**: Contains the different files for the application pages.
   - **`assets/`**: Contains the CSS and images for the application.
-  - **`requirements.txt`**: Lists all dependencies needed to run the project. Install these with `pip install -r requirements.txt`.
+- **`requirements.txt`**: Lists all dependencies needed to run the project. Install these with `pip install -r requirements.txt`.
 - **`README.md`**: Documentation file (this file), providing an overview, installation instructions, and usage guidelines.
 
 
