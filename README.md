@@ -10,7 +10,9 @@ MedLink is a web application designed to support clinical decision-making by ret
 - [Methodology](#methodology)
 - [Installation](#installation)
 - [Usage](#usage)
-- [File/Directory Explanations](#project-structure)
+- [File/Directory Explanations](#file/directory-explanations)
+- [Support](#support)
+- [Acknowledgments](#acknowledgments)
 
 ## 📖 Overview
 
