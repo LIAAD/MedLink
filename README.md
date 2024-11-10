@@ -33,15 +33,11 @@ MedLink’s effectiveness was evaluated by a physician, achieving a ranking mode
 
 ![image](https://github.com/LIAAD/MedLink/blob/main/MedLink-architecture.png)
 
-1. **Bi-Encoder Retrieval**: The retrieval process begins with the bi-encoder model, which independently encodes a set of \( n \) case reports \( A = \{a_1, a_2, \ldots, a_n\} \) and the input medical report (\( mr \)).
+1. **Bi-Encoder Retrieval**: The retrieval process begins with the bi-encoder model, which independently encodes a set of medical case reports and the input medical report.
 
-2. **Similarity Calculation**: The cosine similarity between the embeddings of the medical report (\( mr \)) and each pre-computed case report embedding is then calculated. This gives a similarity score for each case report in the set.
+2. **Top-10 Candidates**: Based on the similarity scores of the bi-encoder, the top-10 most similar case reports are retrieved.
 
-3. **Top-10 Retrieval**: Based on the similarity scores, the top-10 most similar case reports are retrieved. These candidates are then passed to the next step for re-ranking.
-
-4. **Re-Ranking with Cross-Encoder**: The cross-encoder model takes the medical report (\( mr \)) and each of the top-10 retrieved case reports as input. It computes a ranking score for each pair, which reflects the relevance of the case report in relation to the medical report.
-
-5. **Final Ranking**: The retrieved case reports are sorted based on the ranking scores produced by the cross-encoder, resulting in an ordered list of case reports, ranked by their predicted relevance to the input medical report.
+3. **Re-Ranking with Cross-Encoder**: The cross-encoder model takes the medical report and each of the top-10 retrieved case reports as input. It computes a ranking score for each pair, which reflects the relevance of each case report in relation to the medical report.
 
 
 ## 🛠️ Installation
