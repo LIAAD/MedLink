@@ -11,7 +11,6 @@ MedLink is a web application designed to support clinical decision-making by ret
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Dependencies](#dependencies)
-- [License](#license)
 
 ## 📖 Overview
 
@@ -106,10 +105,5 @@ For questions, please contact the authors.
 ## ✍️ Authors and acknowledgments
 
 This work is financed by National Funds through the Fundação para a Ciência e a Tecnologia, within the project StorySense (DOI \url{10.54499/2022.09312.PTDC}) and the Recovery and Resilience Plan within project HfPT, with reference 41.
-
-## 📄 License
-For open source projects, say how it is licensed.
-
-## 📊 Project Status
 
 
