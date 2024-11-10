@@ -8,7 +8,7 @@ MedLink is a web application designed to support clinical decision-making by ret
 <div style="display: flex; justify-content: space-between;">
 
   <div style="width: 20%; text-align: center;">
-    <img src="https://github.com/LIAAD/MedLink/raw/main/medlink-catalog.png" alt="Case Report Selection" style="width: 100%;" />
+    <img src="https://github.com/LIAAD/MedLink/raw/main/medlink-catalog.png" alt="Case Report Selection" style="width: 20%;" />
     <p><strong>Case Report Selection</strong></p>
   </div>
 
