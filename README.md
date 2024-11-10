@@ -7,10 +7,10 @@ MedLink is a web application designed to support clinical decision-making by ret
 ## 📑 Table of Contents
 - [Overview](#overview)
 - [Features](#features)
+- [Methodology](#methodology)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Dependencies](#dependencies)
+- [File/Directory Explanations](#project-structure)
 
 ## 📖 Overview
 
@@ -26,6 +26,16 @@ MedLink’s effectiveness was evaluated by a physician, achieving a ranking mode
 - **Ranking and Scoring**: Case reports are ranked based on relevance using a cross-encoder model.
 - **Clinical Entity Visualization**: Key entities (e.g., symptoms, diagnoses) highlighted using Named Entity Recognition (NER).
 - **Textual Explanations**: Provides context and explanations to facilitate comparison of case reports.
+
+## Methodology
+
+
+
+[![image](https://github.com/MedLink-architecture.png)](https://github.com/LIAAD/MedLink/blob/main/MedLink-architecture.png)
+
+1. The retrieval bi-encoder encodes the set of \(n\) case reports \( A = \{a_1, a_2, \ldots, a_n\} \) and the medical report (\( mr \)) independently.
+3. We calculate the cosine similarity between the \(mr\) embeddings and each pre-computed case report embeddings to get the similarity scores. The top-10 most similar retrieved candidates are then passed to the cross-encoder model for re-ranking.
+5.  The re-ranking cross-encoder takes both the medical report \( mr \) and each retrieved case report as input to compute their ranking score. The ranked case reports are then sorted by ranking scores, producing an ordered list based on their predicted relevance.
 
 ## 🛠️ Installation
 
@@ -72,10 +82,6 @@ MedLink’s effectiveness was evaluated by a physician, achieving a ranking mode
 
 ## 🚀 Usage
 
-### Run the data extraction scripts
-
-### Run the model training scripts
-
 ### Run the Dash app:
 
 ```bash
@@ -87,22 +93,20 @@ python app.py
 
 MedLink repository is divided into 3 different folders, each containing the essential components to replicate and extend the proposed application.
 
-- **`data/`**: Contains the necessary scripts for extracting and cleaning the dataset used for this project, as well as the dataset itself. It also contains the sample dataset used for evaluation.
-- **`models/`**: Contains the scripts required to reproduce the retrieval and re-ranker models.
+- **`spmi_dataset/`**: Contains the necessary scripts for extracting and cleaning the dataset used for this project, as well as the dataset itself. It also contains the sample dataset used for evaluation.
+- **`IR/`**: Contains the scripts required to reproduce the retrieval and re-ranker models.
 - **`dash_app/`**: Contains the MedLink application and necessary files to run it.
   - **`pages/`**: Contains the different files for the application pages.
   - **`assets/`**: Contains the CSS and images for the application.
-- **`requirements.txt`**: Lists all dependencies needed to run the project. Install these with `pip install -r requirements.txt`.
+  - **`requirements.txt`**: Lists all dependencies needed to run the project. Install these with `pip install -r requirements.txt`.
 - **`README.md`**: Documentation file (this file), providing an overview, installation instructions, and usage guidelines.
-- **`LICENSE`**: Specifies the license for the project, detailing permissions and restrictions.
-
 
 
 ## 💬 Support
 For questions, please contact the authors.
 
 
-## ✍️ Authors and acknowledgments
+##  🤝 Acknowledgments
 
 This work is financed by National Funds through the Fundação para a Ciência e a Tecnologia, within the project StorySense (DOI \url{10.54499/2022.09312.PTDC}) and the Recovery and Resilience Plan within project HfPT, with reference 41.
 
