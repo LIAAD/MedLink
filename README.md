@@ -4,7 +4,7 @@ MedLink is a web application designed to support clinical decision-making by ret
 
 [Visit MedLink here](http://medlink.inesctec.pt)
 
-![image1](https://github.com/LIAAD/MedLink/raw/main/medlink-catalog.png) ![image2](https://github.com/LIAAD/MedLink/raw/main/medlink-medreport.png)
+![image2](https://github.com/LIAAD/MedLink/raw/main/medlink-medreport.png)
 
 
 
