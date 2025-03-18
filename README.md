@@ -103,7 +103,7 @@ python app.py
 
 MedLink repository is divided into 3 different folders, each containing the essential components to replicate and extend the proposed application.
 
-- **`spmi_dataset/`**: Contains the necessary scripts for extracting and cleaning the dataset used for this project extracted from ![SPMI Case Reports](https://casereports.spmi.pt/index.php/cr), as well as the dataset itself. It also contains the sample dataset used for evaluation.
+- **`spmi_dataset/`**: Contains the necessary scripts for extracting and cleaning the dataset used for this project extracted from [SPMI Case Reports](https://casereports.spmi.pt/index.php/cr), as well as the dataset itself. It also contains the sample dataset used for evaluation.
 - **`IR/`**: Contains the scripts required to reproduce the retrieval and re-ranker models.
 - **`dash_app/`**: Contains the MedLink application and necessary files to run it.
   - **`pages/`**: Contains the different files for the application pages.
