@@ -103,7 +103,7 @@ python app.py
 
 MedLink repository is divided into 3 different folders, each containing the essential components to replicate and extend the proposed application.
 
-- **`spmi_dataset/`**: Contains the necessary scripts for extracting and cleaning the dataset used for this project, as well as the dataset itself. It also contains the sample dataset used for evaluation.
+- **`spmi_dataset/`**: Contains the necessary scripts for extracting and cleaning the dataset used for this project extracted from ![SPMI Case Reports](https://casereports.spmi.pt/index.php/cr), as well as the dataset itself. It also contains the sample dataset used for evaluation.
 - **`IR/`**: Contains the scripts required to reproduce the retrieval and re-ranker models.
 - **`dash_app/`**: Contains the MedLink application and necessary files to run it.
   - **`pages/`**: Contains the different files for the application pages.
@@ -118,6 +118,8 @@ For questions, please contact the authors.
 
 ##  🤝 Acknowledgments
 
-This work is financed by National Funds through the Fundação para a Ciência e a Tecnologia, within the project StorySense (DOI \url{10.54499/2022.09312.PTDC}) and the Recovery and Resilience Plan within project HfPT, with reference 41.
-
+This work is co-financed by Component 5 - Capitalization and Business Innovation, integrated in the Resilience Dimension of the Recovery and Resilience Plan within the scope of the Recovery and Resilience Mechanism (MRR) of the European Union (EU), framed in the Next Generation EU, for the period 2021 - 2026, within project HfPT, with reference 41.
+The authors also would like to acknowledge project StorySense, with reference 2022.09312.PTDC (DOI 10.54499/2022.09312.PTDC) and the Advanced
+Computing Project CPCA-IAC/AV/594794/2023(https://doi.org/10.54499/CPCAIAC/ AV/594794/2023). The authors also thank Dr Luís Monteiro Dias for his contribution in elaborating the queries (medical reports) and the Sociedade Portuguesa de Medicina Interna (SPMI) for allowing access to the case reports used in this paper.
+Luís Filipe Cunha thanks the Fundação para a Ciência e Tecnologia (FCT), Portugal, for the Ph.D. Grant (2024.04202.BD).
 
